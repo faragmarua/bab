@@ -1,0 +1,14 @@
+/* about-us.component.css */
+.about-us-container {
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .about-us-container img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+  }
+  

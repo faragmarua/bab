@@ -1,0 +1,55 @@
+body {
+    background-color: #f5f5dc; /* Beige background */
+    height: 100%;
+    margin: 0;
+  }
+  
+  /* Ensuring the navbar text is clearly visible */
+.navbar {
+    background-color: #333; /* Darker shade for better visibility */
+    border-bottom: 3px solid #f5f5dc; /* Beige border for a touch of design */
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #96965d; /* Beige text for contrast */
+    text-shadow: 1px 1px 2px #000; /* Black shadow for readability */
+  }
+  
+  /* Adjusting hover effects for better user experience */
+  .navbar a:hover {
+    background-color: #555; /* Slightly lighter shade for hover effect */
+  }
+  
+  /* Making the active link stand out */
+  .navbar .active {
+    border-bottom: 2px solid #f5f5dc; /* Beige underline for the active section */
+  }
+
+ /* Footer styling */
+/* Footer styling */
+footer.footer {
+    color: #f5f5dc; /* Beige text for the footer */
+    background-color: #333; /* Dark background for footer */
+    padding: 10px 0; /* Padding for aesthetic spacing */
+    display: flex; /* Using flexbox for alignment */
+  }
+  
+  footer a {
+    color: #f5f5dc; /* Beige text for links in the footer */
+    text-decoration: none; /* Optional: removes underline from links */
+    margin-right: 15px; /* Right margin for spacing between links */
+  }
+  
+  footer a:last-child {
+    margin-right: 0; /* Remove margin for the last link */
+  }
+  
+  footer a:hover {
+    color: #fff !important; /* White text for hover state */
+  }
+  
+  
+/* Additional styles to ensure visibility */
+.footer .text-muted {
+    color: #ddd !important; /* Lighter text color for better visibility */
+  }
