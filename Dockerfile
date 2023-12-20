@@ -15,14 +15,26 @@ COPY . .
 RUN npm run build --prod 
 
 # Step 6: Use Nginx to serve the static content
+# FROM nginx:1.19.0
+
+# ... previous Dockerfile steps
+
+# Use the nginx image for serving the content
 FROM nginx:1.19.0
 
+# Set the environment variable for PORT
+ENV PORT 8080
+
 # Copy the custom Nginx configuration file
-COPY nginx.conf /etc/nginx/conf.d/default.conf
+COPY nginx.conf /etc/nginx/templates/default.conf.template
+
+# Copy the build output from the previous stage into the nginx directory
 COPY --from=build /app/dist/bedandbreakfast-marua /usr/share/nginx/html
 
-# Step 7: Expose port 80 to the outside once the container has launched
-EXPOSE 80
+# Expose the port
+EXPOSE $PORT
 
-# Step 8: Define the command to run your app using CMD which defines your runtime
-CMD ["nginx", "-g", "daemon off;"]
+# Replace the PORT in nginx config and start nginx
+# CMD /bin/bash -c "envsubst < /etc/nginx/templates/default.conf.template > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"
+CMD /bin/bash -c "envsubst < /etc/nginx/templates/default.conf.template > /etc/nginx/conf.d/default.conf && exec nginx -g 'daemon off;'"
+
