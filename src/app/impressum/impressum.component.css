@@ -1,0 +1,20 @@
+.impressum-container {
+    margin: 20px;
+    padding: 20px;
+    background-color: #f8f8f8;
+    border: 1px solid #eaeaea;
+    border-radius: 5px;
+  }
+  
+  .impressum-container h1 {
+    color: #333;
+  }
+  
+  .impressum-container h2 {
+    color: #666;
+  }
+  
+  .impressum-container p {
+    color: #444;
+  }
+  
