@@ -7,6 +7,7 @@ import { ExcursionTipsComponent } from './excursion-tips/excursion-tips.componen
 import { AnreiseComponent } from './anreise/anreise.component';
 import { FlyerDownloadComponent } from './flyer-download/flyer-download.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { VerrechnungComponent } from './verrechnung/verrechnung.component';
 
 const routes: Routes = [
   // { path: '', component: AppComponent },
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'anreise', component: AnreiseComponent },
   { path: 'flyer-download', component: FlyerDownloadComponent },
   { path: 'impressum', component: ImpressumComponent },
+  { path: 'verrechnung', component: VerrechnungComponent  },
   // other routes...
 ];
 

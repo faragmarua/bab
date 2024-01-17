@@ -10,6 +10,7 @@ import { ExcursionTipsComponent } from './excursion-tips/excursion-tips.componen
 import { AnreiseComponent } from './anreise/anreise.component';
 import { FlyerDownloadComponent } from './flyer-download/flyer-download.component';
 import { ImpressumComponent } from './impressum/impressum.component';
+import { VerrechnungComponent } from './verrechnung/verrechnung.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { ImpressumComponent } from './impressum/impressum.component';
     AnreiseComponent,
     FlyerDownloadComponent,
     ImpressumComponent,
+    VerrechnungComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, GoogleMapsModule],
   providers: [],
