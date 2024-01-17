@@ -1,7 +1,7 @@
-<!-- <div *ngFor="let excursion of excursions">
-    <h3>{{ excursion.title }}</h3>
-    <img [src]="excursion.imageUrl" [alt]="excursion.title">
-    <p>{{ excursion.description }}</p>
-    <a [href]="excursion.linkUrl" target="_blank">Mehr erfahren</a>
-  </div>
-   -->
+<h1>Ausflugtipps</h1>
+<div *ngFor="let tipp of ausflugstipps" class="tipp">
+  <h3>{{ tipp.title }}</h3>
+  <p>{{ tipp.description }}</p>
+  <img [src]="tipp.imageUrl" [alt]="tipp.title">
+  <a [href]="tipp.detailUrl" target="_blank">Mehr erfahren</a>
+</div>
